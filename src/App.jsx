@@ -14,9 +14,9 @@ function App() {
 
 	return (
 		<>
-			<div className="flex flex-col h-[700px] w-[700px] bg-[#cccccc] p-[10px] rounded shadow-lg">
+			<div className="flex flex-col h-[700px] w-[1000px] bg-[#585858] p-[10px] rounded shadow-lg">
 				<input
-					className="p-[5px] rounded"
+					className="p-[5px] rounded mb-[10px]"
 					type="text"
 					placeholder="Enter text here"
 					onChange={(e) => {
@@ -35,7 +35,7 @@ function App() {
 					<directionalLight position={[-2, 5, 2]} intensity={1} />
 					<AnimatedSphere />
 				</Canvas> */}
-				<Canvas>
+				<Canvas className="bg-[url(./assets/images/gradient.jpg)] rounded ">
 					<OrbitControls enableZoom={true} />
 					<ambientLight intensity={0.5} />
 					<directionalLight position={[-2, 5, 2]} intensity={1} />
