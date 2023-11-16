@@ -22,7 +22,7 @@ export function Bottle({ bottleText, props }) {
 	const { nodes, materials } = useGLTF("/bottle.gltf");
 
 	return (
-		<group position={[0, -1, 0]} {...props} dispose={null} scale={0.2}>
+		<group position={[0, -1.9, 0]} {...props} dispose={null} scale={0.2}>
 			<mesh geometry={nodes.Lid_Water_Bottle_Lid_0.geometry}>
 				<MeshReflectorMaterial
 					attach="material"
